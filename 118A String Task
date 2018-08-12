@@ -1,0 +1,11 @@
+word = raw_input().split()[0]
+
+word = word.lower()
+x = []
+word = word.translate(None, 'aeiouy')
+
+for w in word:
+    x.append('.'+w)
+    
+print "".join([str(y) for y in x] )
+
