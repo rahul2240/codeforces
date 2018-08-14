@@ -1,0 +1,11 @@
+n = int(input())
+b=0
+while n>0:
+    a = raw_input()
+    if a.count('++') > 0:
+        b = b+1
+    if a.count('--') > 0:
+        b = b+1
+    n-=1
+    
+print b
