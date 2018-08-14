@@ -1,0 +1,10 @@
+n = raw_input().split()[0]
+m = raw_input().split()[0]
+n = n.lower()
+m = m.lower()
+if n<m:
+    print '1'
+elif n==m:
+    print '0'
+else:
+    print '-1'
