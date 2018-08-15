@@ -1,0 +1,10 @@
+n = raw_input()
+m = n.split('+')
+
+m.sort()
+a = []
+for i in m:
+    a.append(i)
+    a.append('+')
+    
+print "".join(a[0:-1])
