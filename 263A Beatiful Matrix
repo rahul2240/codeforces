@@ -1,0 +1,16 @@
+a = map(int, raw_input().split())
+b = map(int, raw_input().split())
+c = map(int, raw_input().split())
+d = map(int, raw_input().split())
+e = map(int, raw_input().split())
+
+if a.count(1)>0 :
+    print abs(a.index(1)-2)+2
+elif b.count(1)>0 :
+    print abs(b.index(1)-2)+1
+elif c.count(1)>0 :
+    print abs(c.index(1)-2)+0
+elif d.count(1)>0 :
+    print abs(d.index(1)-2)+1
+elif e.count(1)>0 :
+    print abs(e.index(1)-2)+2
