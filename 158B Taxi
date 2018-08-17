@@ -1,0 +1,37 @@
+import math 
+n = int(input())
+a = map(int, raw_input().split())
+
+one = a.count(1)
+two = a.count(2)
+three = a.count(3)
+sum = a.count(4)
+
+
+if three-one>=0:
+    sum = sum + three 
+    if two%2==0:
+        sum+= two/2
+    else:
+        sum+= two/2 + 1
+else:
+    sum = sum+three
+    one = one-three
+    
+    if two%2==0:
+        sum+= two/2
+    else:
+        sum+= two/2
+        if one>2:
+            sum+=1
+            one = one-2
+        else:
+            sum+=1
+            one=0
+    if one%4>0:
+        sum = sum + one/4 + 1
+    else:
+        sum = sum + one/4
+    
+
+print int(sum)
