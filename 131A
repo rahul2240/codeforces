@@ -1,0 +1,9 @@
+a = raw_input()
+b = a[0].lower() + a[1:].upper()
+
+if a==a.upper():
+    print a.lower()
+elif a==b:
+    print a.capitalize()
+else:
+    print a
