@@ -1,0 +1,20 @@
+t = int(input())
+
+while t>0:
+    q = int(input())
+    n = raw_input()
+    
+    n = list(n)
+    
+    n = [ord(i) for i in n]
+    f=0
+    for i in range(0,q/2):
+        if n[i]!=n[len(n)-i-1]:
+            if abs(n[i]-n[q-i-1])!=2:
+                f=1
+                break
+    if f==0:
+        print 'YES'
+    else:
+        print 'NO'
+    t-=1
