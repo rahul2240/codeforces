@@ -1,0 +1,17 @@
+a = raw_input()
+a = list(a)
+b = ['h', 'e', 'l', 'l', 'o']
+j=0
+sum=0
+for i in range(0,len(a)):
+    if a[i]==b[j]:
+        j+=1
+        sum+=1
+        if j==5:
+            break;
+    
+    
+if sum==5:
+    print 'YES'
+else:
+    print 'NO'
