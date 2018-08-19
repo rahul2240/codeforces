@@ -1,0 +1,12 @@
+t = int(input())
+max = 0
+b=0
+while t>0:
+    a = map(int, raw_input().split())
+
+    if b < max - a[0] + a[1]:
+        b = max - a[0] + a[1]
+    max = max - a[0] + a[1]
+        
+    t-=1
+print b
