@@ -1,0 +1,12 @@
+n = int(input())
+t=0
+for i in range(4,n+1):
+    a = str(i)
+    if n%i==0 and (a.count('4') + a.count('7') == len(a)):
+        t=1
+        break;
+    
+if t==0:
+    print 'NO'
+else:
+    print 'YES'
