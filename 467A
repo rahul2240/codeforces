@@ -1,0 +1,9 @@
+n = int(raw_input())
+x=0
+while n>0:
+    a = map(int, raw_input().split())
+    if a[1]-a[0]>=2:
+        x+=1
+    n-=1
+
+print x
