@@ -1,0 +1,12 @@
+n = int(raw_input())
+x=y=z=0
+while n>0:
+    a = map(int, raw_input().split())
+    x = x+a[0]
+    y = y+a[1]
+    z = z+a[2]
+    n-=1
+if x==0 and y==0 and z==0:
+    print 'YES'
+else:
+    print 'NO'
