@@ -1,0 +1,12 @@
+n = raw_input()
+f=s=0
+n=list(n)
+for i in n:
+    if i=='4' or i=='7':
+        f+=1
+
+q = list(str(f))
+if q.count('4') + q.count('7') == len(q):
+    print 'YES'
+else:
+    print 'NO'
